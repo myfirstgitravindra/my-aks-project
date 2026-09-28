@@ -22,12 +22,12 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: acraksdemoproject.azurecr.io/my-app:v1
+          image: acraksdemoproject.azurecr.io/my-app:v3
           ports:
             - containerPort: 3000
           env:
             - name: APP_VERSION
-              value: "v2"
+              value: "v3"
           readinessProbe:
             httpGet:
               path: /health
